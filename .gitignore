@@ -1,0 +1,28 @@
+# Executables
+*.out
+emu8
+*.exe
+
+# Object files
+*.o
+
+# CHIP-8 files
+*.ch8
+
+# Text files
+*.txt
+
+# Directories
+bin/
+log/
+
+# IDE files
+.idea
+.vscode
+
+# Formatting files
+.clang-format
+
+# ctag file
+tags
+*.tags
