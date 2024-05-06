@@ -21,14 +21,25 @@ Github repo is the mirror of [Codeberg](https://codeberg.org/skinatro/emu8)
 __NOTE__ : The wav file must be named 440.wav and must be in the same directory as the executable/ 
 
 ## Building
-### *Nix
- __Depdendencies:__
+### Dependencies
+
+#### *Nix 
 - make
 - SDL2
 - gcc / clang
-- *nix system
 
-__Compiling:__ Just run `make all` to compile, `make clean` to remove the binaries and `make rebuild` to clean and compile everything
+#### Windows
+On Windows you have two options, you can either use WSL or Mingw
+##### WSL
+Refer the *Nix instructions above
+##### Mingw
+- mingw 
+- make
+- SDL2
+- gcc / clang
+
+### Compiling
+ Just run `make all` to compile, `make clean` to remove the binaries and `make rebuild` to clean and compile everything
 
 __Note 1:__ You can pass `-j$(nproc)` to speed the build process.\
 __Note 2:__ The binary produced does not has the debug information stripped and is compiled with the `-g` and `-ggdb` flags.
@@ -43,15 +54,15 @@ __Note 2:__ The binary produced does not has the debug information stripped and 
 
 ## ToDo
 ### Near Future
+- [x] Add Windows Build Instructions
 - [ ] Clean Up The Codebase & 
    - [ ] Also Use SDL_Log Instead Of Printf 
    - [ ] Use SDL_Open Instead Of fopen() ?
 - [ ] Generate The Sound Using SDL (Without Needing to Rely On A WAV)
 - [ ] Add OOB Checks
 - [ ] Add Config File Support 
-    - [ ] Add Keyboard Re-Mapping
 ### Future
-- [ ] Add Windows Build Instructions
+- [ ] Add Keyboard Re-Mapping
 - [ ] Add Debugger
 - [ ] Add Support For XO-CHIP, SCHIP, ETC
 - [ ] UI Support
